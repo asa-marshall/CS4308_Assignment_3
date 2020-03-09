@@ -1,3 +1,7 @@
+"""__main__
+
+Prompts user to enter information about one or more students and prints back the entered information.
+"""
 from Student import Student
 
 
@@ -48,5 +52,6 @@ if __name__ == '__main__':
         students.append(student)
         if not continue_adding():
             break
+    print("\nPrinting student information...")
     for s in students:
         print(s)
